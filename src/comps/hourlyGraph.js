@@ -12,7 +12,7 @@ const WeatherChart = ({ city,screenWidth }) => {
 
 
     useEffect(() => {
-        const apiKey = '084a61133e7a78a1ec1c625428717d1b';
+        const apiKey = apiKey;
         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`)
             .then(response => {
                 if (!response.ok) {
