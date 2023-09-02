@@ -25,11 +25,11 @@ The Weather Website is a web application that provides real-time weather informa
    git clone https://github.com/vigneshkumarm2002/weather-website.git
    cd weather-website
 
-Usage :
+## Usage
 Upon loading the website, it will attempt to access your geolocation to provide weather information for your current location. If geolocation is blocked, it will fetch data for a predefined city.
 Use the search bar to look up weather information for a specific city.
 Explore the hourly forecast section for detailed weather predictions.
 
-Acknowledgements:
+## Acknowledgements
 Weather data provided by OpenWeatherMap.
 The icons used in the project are from Material Icons.
