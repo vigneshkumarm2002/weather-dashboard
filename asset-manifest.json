@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/weather-dashboard/static/css/main.9de8c1b6.css",
+    "main.js": "/weather-dashboard/static/js/main.7396c481.js",
+    "static/media/Snow.svg": "/weather-dashboard/static/media/Snow.fb41c48eefbb04802311.svg",
+    "static/media/Thunderstorm.svg": "/weather-dashboard/static/media/Thunderstorm.6aec705d97214dadd842.svg",
+    "static/media/Clouds.svg": "/weather-dashboard/static/media/Clouds.260ee2d261609ab4294c.svg",
+    "static/media/Sunny.svg": "/weather-dashboard/static/media/Sunny.d3b0084ded27ca4e12df.svg",
+    "static/media/Clear.svg": "/weather-dashboard/static/media/Clear.2dd2c7d97024326cbc7b.svg",
+    "static/media/Rain.svg": "/weather-dashboard/static/media/Rain.0f309f13f390d9532a33.svg",
+    "static/media/Weather.svg": "/weather-dashboard/static/media/Weather.1e08304f21896e5edf3b.svg",
+    "static/media/Drizzle.svg": "/weather-dashboard/static/media/Drizzle.ef328e136726eabca829.svg",
+    "static/media/notFound.svg": "/weather-dashboard/static/media/notFound.437d7f27c276b6fd84717bebfdd7b613.svg",
+    "index.html": "/weather-dashboard/index.html",
+    "static/media/search.svg": "/weather-dashboard/static/media/search.558fe28e4e4f00210394cf2fa24b8069.svg",
+    "main.9de8c1b6.css.map": "/weather-dashboard/static/css/main.9de8c1b6.css.map",
+    "main.7396c481.js.map": "/weather-dashboard/static/js/main.7396c481.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9de8c1b6.css",
+    "static/js/main.7396c481.js"
+  ]
+}
