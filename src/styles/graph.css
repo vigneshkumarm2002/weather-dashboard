@@ -1,0 +1,151 @@
+.hourDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  padding: 0px 5px;
+  width: 50px;
+}
+
+.hourDetails img{
+    width: 35px;
+    height: 35px;
+}
+.hourDetails .weatherName{
+  margin-top: 7px;
+
+}
+.graphContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.graph{
+    padding: 0px 20px;
+    width: 100%;
+    height: 100px;
+}
+.graphContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-between;
+    gap: 10px;
+}
+.hourWeatherDetails{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hourDetails p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.hourDetails{
+    font-family: 'Montserrat', sans-serif;
+}
+.hourDetails .month{
+    font-size: 10px;
+    margin-top: 2px;
+}
+.hourDetails .time{
+    font-size: 12px;
+  
+}
+
+
+.graphHandler .nextday{
+    width: fit-content;
+    border-radius: 10px;
+    padding: 2px 3px 2px 7px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  
+  }
+  .graphHandler .prevday{
+    padding: 2px 7px 2px 3px;
+  }
+  .graphHandler .nextday span{
+    font-size: 20px;
+    margin-top: 2px;
+  }
+  .graphHandler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .graphHandler p{
+    font-weight:500;
+  }
+  .btns{
+    display: flex;
+    gap: 10px;
+    user-select: none;
+  }
+
+  @media only screen and (max-width: 550px) {
+    .graphHandler {
+      gap: 20px;
+    }
+    .graphHandler p{
+      font-size: 14px;
+    }
+    .graphHandler .nextday{
+      border-radius: 10px;
+      padding: 2px 3px 2px 7px;
+      background-color: #F1F1F1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+    }
+    .graphHandler .prevday{
+      padding: 2px 7px 2px 3px;
+    }
+    .graphHandler .nextday span{
+      margin-top: 0px;
+    }
+    .graph{
+      padding: 0px 12px;
+      height: 80px;
+  }
+
+  .hourWeatherDetails{
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -5px ;
+    
+}
+.hourDetails p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.hourDetails .month{
+    font-size: 9px;
+}
+.hourDetails .time{
+    font-size: 10px;
+  
+}
+.hourDetails{
+
+width: 42px;
+
+}
+
+   }

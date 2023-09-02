@@ -1,38 +1,505 @@
-.App {
-  text-align: center;
+*:focus {
+  outline: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+   padding: 50px 50px;
+  display: flex;
+ 
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #B5D8FF;
+}.leftContainer{
+  width: 400px;
+ padding: 30px 20px;
+  background-color: #5C9CE5;
+  height: 100%;
+  border-radius: 50px 0 0 50px ;
   display: flex;
   flex-direction: column;
+ align-items: center;
+ color: white;
+ position: relative;
+ gap: 20px;
+
+}
+.rightContainer{
+  padding: 30px 50px;
+  width: calc(100% - 350px);
+  background-color: #E4F1FF;
+  height: 100%;
+  border-radius: 0 50px 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.topBar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topBar a{
+  color: white;
+  text-decoration: none;
+}
+.topBar h3{
+  background-color: #5C9CE5;
+  padding:5px 8px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.topBar h3 span{
+  font-size: 18px;
+}
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.showDate{
+  font-size: 16px;
+  font-weight: 400;
+}
+.weatherType{
+ margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cityName{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cityName img{
+  width: 50px;
+  height: auto;
+}
+.whatWeather{
+  font-size: 24px;
+}
+.weatherType p{
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.degreeValue{
+  position: relative;
+  font-size: 100px;
+  font-weight: 400;
+}
+.degreeValue span{
+  position: absolute;
+  top: 10px;
+  right: -25px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.today-content{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.weather-Img{
+  height: 50%;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.weather-Img img{
+  width: 100%;
+  height: 90%;
+  align-self:flex-end;
+
+}
+
+.hourlyWeather{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+
+}
+.weatherDetails{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+}
+.weatherDetails p{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.allWeatherDetails {
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.allWeatherDetails::-webkit-scrollbar {
+  display: none; 
+}
+
+.detailContainer{
+  
+  min-width: 170px; 
+  max-width: 180px; 
+ border-radius: 15px;
+  height: 120px;
+  background-color: white;
+  padding: 15px;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.weatherIcon{
+  background-color: #5C9CE5;
   color: white;
+ font-weight: 100;
+ width: 30px;
+ height: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 15px;
+ user-select: none;
+}
+.align{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.align span{
+  font-size: 22px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+.detailContainer p{
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.valueContainer{
+  height: 100%;
+ display: flex;
+align-items: center;
+justify-content: center;
+}
+.valueContainer .value{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.valueContainer .value span{
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+.detailsHandler{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.slidebtns{
+  display: flex;
+  gap: 10px;
+}
+.slidebtns span{
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  .leftContainer{
+    width: 300px;
+  }
+  .rightContainer{
+    width: calc(100% - 300px);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1000px) {
+  .App{
+    padding: 50px 20px;
+ }
+  .leftContainer{
+    width: 230px;
+   padding: 30px 10px;
+    border-radius: 30px 0 0 30px ;
   }
-  to {
-    transform: rotate(360deg);
+  .rightContainer{
+    padding: 30px 30px;
+    width: calc(100% - 230px);
+    border-radius: 0 30px 30px 0;
   }
+  .detailContainer{
+    min-width: 140px; 
+    max-width: 180px; 
+   border-radius: 12px;
+  }
+  .weatherIcon{
+   width: 25px;
+   height: 25px;
+   border-radius: 8px;
+  }
+  .detailContainer p{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .align span{
+    font-size: 18px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  .valueContainer .value{
+    font-size: 30px;
+  }
+  .valueContainer .value span{
+    font-size: 18px;
+  }
+  .showDate{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .weatherType{
+   margin-top: -20px;
+  }
+  
+  .cityName{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .whatWeather{
+    font-size: 22px;
+  }
+  .degreeValue{
+    font-size: 80px;
+  }
+  .degreeValue span{
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    font-size: 50px;
+    font-weight: 400;
+  }
+  
 }
+
+@media only screen and (max-width: 768px) {
+  .App{
+    padding: 50px 30px;
+  flex-direction: column;
+   height: 100%;
+   width: 100%;
+ }
+ .leftContainer{
+  width: 100%;
+ padding: 30px 30px;
+  height: 300px;
+  border-radius: 30px 30px 0 0px ;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.today-content{
+  width: 50%;
+  height: 90%;
+  justify-content: space-around;
+}
+.weather-Img{
+  height: 100%;
+  width: 50%;
+
+}
+.weather-Img img{
+  width: 100%;
+  height: 100%;
+
+}
+.rightContainer{
+  padding: 30px 30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0px 30px 30px;
+}
+}
+
+@media only screen and (max-width: 550px) {
+
+  .App{
+    padding: 0px 0px;
+  flex-direction: column;
+   height: 100%;
+   width: 100%;
+ }
+ .leftContainer{
+  width: 100%;
+ padding: 30px 20px;
+  height: 100%;
+  border-radius: 00px 0px 0 0px ;
+  flex-direction: column;
+}
+.today-content{
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+  gap: 10px;
+}
+.weather-Img{
+  height: 50%;
+  width: 100%;
+}
+.weather-Img img{
+  width: 70%;
+  height: 100%;
+
+}
+.showDate{
+  font-size: 15px;
+  margin-top: 15px;
+}
+.weatherType{
+ margin-top: -15px;
+}
+
+.cityName{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cityName img{
+  width: 35px;
+}
+.whatWeather{
+  font-size: 20px;
+}
+.weatherType p{
+  font-size: 15px;
+  margin-top: 5px;
+}
+.degreeValue{
+  font-size: 70px;
+  font-weight: 400;
+}
+.degreeValue span{
+  right: -15px;
+  font-size: 35px;
+  font-weight: 500;
+}
+.rightContainer{
+  padding: 30px 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0px 0px 0px;
+  gap: 30px;
+}
+.topBar{
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topBar h3{
+  padding:5px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+.topBar h3 span{
+  font-size: 20px;
+}
+.hourlyWeather{
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  padding: 20px 15px;
+
+}
+.weatherDetails{
+  gap:20px;
+}
+.weatherDetails p{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.allWeatherDetails {
+  gap: 15px;
+}
+
+.detailContainer{
+  min-width: 150px; 
+ border-radius: 10px;
+  height: 110px;
+  padding: 12px;
+  padding: 10px 12px;
+}
+
+.weatherIcon{
+ width: 25px;
+ height: 25px;
+ border-radius: 15px;
+}
+.align span{
+  font-size: 18px;
+}
+.detailContainer p{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.valueContainer .value{
+  font-size: 30px;
+}
+.valueContainer .value span{
+  font-size: 18px;
+}
+.detailsHandler{
+  gap: 20px;
+}
+}
+
+
+
+
