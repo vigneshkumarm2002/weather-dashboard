@@ -3,12 +3,18 @@
 }
 .App{
    padding: 50px 50px;
-  display: flex;
- 
-  align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #B5D8FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
 }.leftContainer{
   width: 400px;
  padding: 30px 20px;
@@ -49,7 +55,7 @@
   font-size: 18px;
   font-weight: 400;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,9 +337,12 @@ justify-content: center;
 @media only screen and (max-width: 768px) {
   .App{
     padding: 50px 30px;
-  flex-direction: column;
+
    height: 100%;
    width: 100%;
+ }
+ .container{
+  flex-direction: column;
  }
  .leftContainer{
   width: 100%;
@@ -370,7 +379,6 @@ justify-content: center;
 
   .App{
     padding: 0px 0px;
-  flex-direction: column;
    height: 100%;
    width: 100%;
  }
@@ -498,6 +506,29 @@ justify-content: center;
 .detailsHandler{
   gap: 20px;
 }
+}
+
+@media only screen and (max-height: 749.8px) {
+  .App{
+   height: 750px;
+
+ }
+}
+@media only screen and (min-width: 1550px) {
+  .App{
+    padding: 50px 50px;
+   height: 100vh;
+  
+ }
+ .container{
+   width: 1400px;
+ }
+}
+
+@media only screen and (min-height: 750px) {
+ .container{
+   height:700px;
+ }
 }
 
 

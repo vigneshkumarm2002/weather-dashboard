@@ -149,3 +149,27 @@ width: 42px;
 }
 
    }
+
+   @media only screen and (min-height: 750px) {
+
+    .hourDetails p{
+      font-size: 16px;
+  }
+  
+  .hourDetails .month{
+      font-size: 12px;
+  }
+  .hourDetails .time{
+      font-size: 14px;
+    
+  }
+  .hourDetails{
+  
+  width: 60px;
+  
+   }
+   .graph{
+    padding: 0px 25px;
+    height: 130px;
+}
+  }

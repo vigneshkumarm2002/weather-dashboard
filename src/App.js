@@ -87,10 +87,10 @@ function App() {
   return (
     <div className="App">
       {weatherData && (
-        <>
+        <div className="container">
           <LeftContainer fetchWeatherData={fetchWeatherData} weatherData={weatherData} screenWidth={screenWidth} />
           <RightContainer fetchWeatherData={fetchWeatherData} weatherData={weatherData} screenWidth={screenWidth} cityName={cityName} />
-        </>
+        </div>
       )}
       {
         showError && (
