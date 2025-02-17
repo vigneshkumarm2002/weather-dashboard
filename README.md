@@ -35,4 +35,5 @@ Weather data provided by OpenWeatherMap.
 The icons used in the project are from Material Icons.
 
 ## Author
-Developed by **Vigneshkumar M**. Visit my [Portfolio]("https://mvigneshkumar-portfolio.web.app/") for more projects.
+Developed by **Vigneshkumar M**. Visit my [Portfolio](https://mvigneshkumar-portfolio.web.app/) for more projects.
+
